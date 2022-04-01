@@ -14,7 +14,7 @@ def synth(sy,sections):
     def rep(item):
 
         path = f'../{item}/'
-        f = 5
+        f = 1
 
         repitem = lambda nm,w,h: f"""  <a href="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true" 
             data-pswp-src="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true"
@@ -39,7 +39,6 @@ def synth(sy,sections):
 
         os.system(f'git add ../{item}/')
         os.system(f'git commit -m "[auto] update [glob] {item}"')
-        os.system('git push')
 
         reptext=[]
         for p in os.listdir(path):
