@@ -16,6 +16,7 @@ header:
 <script defer src="../../js/scrollMain.js"></script>
 <script defer src="../../js/art.js"></script>
 <link href="../../css/mixblend_disable.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
 <div class="text hc hblur">
 <br>-----------------------------------------------------------------------------------------------------------<br>
  -- Apologies! The portion of the site you are visiting is under construction!  I appreciate your patience! Thank you!
@@ -33,6 +34,9 @@ header:
 <h1>3D Modeling</h1>
 <hr/>
 <div class="art">
+<div class="pswp-gallery" id="gallery--art">
+[replace-models]
+</div>
 <div class="text hblur" style="position:relative; left: 2.5%;width: 95%;">Limited set of selected works, mostly done for game development, which is why they are quite simple! Done with Blender.</div>
 <hr/>
 </div>

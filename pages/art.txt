@@ -1,4 +1,0 @@
-  <a href="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/art/[imgname]" 
-    target="_blank">
-    <img src="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/art/[imgname]" alt="" />
-  </a>
