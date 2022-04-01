@@ -17,6 +17,7 @@ def synth(sy,sections):
         f = 5
 
         repitem = lambda nm,w,h: f"""  <a href="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true" 
+            data-pswp-src="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true"
             data-pswp-width="{w}" 
             data-pswp-height="{h}"
             target="_blank">
