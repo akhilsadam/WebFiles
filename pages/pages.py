@@ -14,14 +14,14 @@ def synth(sy,sections):
     def rep(item):
 
         path = f'../{item}/'
-        f = 1
+        f = 5
 
         repitem = lambda nm,w,h: f"""  <a href="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true" 
             data-pswp-src="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true"
             data-pswp-width="{w}" 
             data-pswp-height="{h}"
             target="_blank">
-            <img src="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true" alt="" width="{w}" height="{h}"/>
+            <img src="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true" alt="" width="{int(w/f)}" height="{int(w/h)}"/>
         </a>"""
         # 
         url = lambda nm: f"https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true"
@@ -51,11 +51,11 @@ def synth(sy,sections):
                     print(f"[WARN]: Image {p} does not exist.")
                 else:
                     w,h = im.size
-                    reptext.append(repitem(p,int(w/f),int(h/f)))
+                    reptext.append(repitem(p,w,h))
             elif ext in other:
                 w = 1920
                 h = 1080
-                reptext.append(repitem(p, w // f, h // f))
+                reptext.append(repitem(p, w, h))
 
         return reptext
 
