@@ -25,7 +25,7 @@ header:
 <h1>Art Gallery</h1>
 <hr/>
 <div class="art">
-<div class="pswp-gallery" id="gallery--art">
+<div class="pswp-gallery  pswp-gallery--single-column" id="gallery--art">
 [replace-art]
 </div>
 <div class="text hblur" style="position:relative; left: 2.5%;width: 95%;">Only a very limited set of selected works! Done with <a href="https://www.blender.org/">Blender</a> (EEVEE and Cycles), occasionally using <a href="https://luxcorerender.org/">LuxCoreRender</a>. Mild post-production in <a href="http://x.photoscape.org/">PhotoscapeX</a>. 2D work done in <a href="https://krita.org/en/">Krita</a> and <a href="https://www.gimp.org/">Gimp</a>. </div>

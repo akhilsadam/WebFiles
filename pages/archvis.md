@@ -24,7 +24,7 @@ header:
 <h1>Architectural Visualization</h1>
 <hr/>
 <div class="portfolio">
-<div class="pswp-gallery" id="gallery--art">
+<div class="pswp-gallery  pswp-gallery--single-column" id="gallery--art">
 [replace-archvis]
 </div>
 </div>
