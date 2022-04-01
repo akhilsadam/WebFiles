@@ -1,0 +1,2 @@
+art:
+	py art.py

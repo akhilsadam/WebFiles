@@ -16,7 +16,7 @@ header:
 <script type="text/js" defer src="../../js/scrollMain.js"></script>
 <script type="module" defer src="../../js/art.js"></script>
 <link href="../../css/mixblend_disable.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="../../photoswipe/dist/photoswipe.css"  type="text/css">
+<link rel="stylesheet" href="/../../photoswipe/photoswipe.css"  type="text/css">
 <div class="text hc hblur">
 <br>-----------------------------------------------------------------------------------------------------------<br>
  -- Apologies! The portion of the site you are visiting is under construction!  I appreciate your patience! Thank you!
@@ -26,7 +26,9 @@ header:
 <hr/>
 <div class="portfolio">
 <div class="pswp-gallery  pswp-gallery--single-column" id="gallery--art">
+<masonry-layout cols="5" gap="10">
 [replace-archvis]
+</masonry-layout>
 </div>
 </div>
 <hr/>
