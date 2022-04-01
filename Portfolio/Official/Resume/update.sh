@@ -1,0 +1,1 @@
+cp resume.pdf ../../../../Website/academic-kickstart/content/cv/cv/resume.pdf
