@@ -21,8 +21,9 @@ def synth(sy,sections):
             data-pswp-width="{w}" 
             data-pswp-height="{h}"
             target="_blank">
+            <img src="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true" alt="" />
         </a>"""
-        # <img src="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true" alt="" />
+        # 
         url = lambda nm: f"https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true"
 
         for p in os.listdir(path):
