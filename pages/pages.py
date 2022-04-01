@@ -14,7 +14,7 @@ def synth(sy,sections):
     def rep(item):
 
         path = f'../{item}/'
-        f = 5
+        f = 10
 
         repitem = lambda nm,w,h: f"""  <a href="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true" 
             data-pswp-src="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true"
