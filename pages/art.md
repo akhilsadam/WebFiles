@@ -16,7 +16,7 @@ header:
 <script type="text/js" defer src="../../js/scrollMain.js"></script>
 <script type="module" defer src="../../js/art.js"></script>
 <link href="../../css/mixblend_disable.css" rel="stylesheet" type="text/css">
-<link type="text/css" rel="stylesheet" href="photoswipe/dist/photoswipe.css">
+<link rel="stylesheet" href="../../photoswipe/dist/photoswipe.css"  type="text/css">
 <div class="text hc hblur">
 <br>-----------------------------------------------------------------------------------------------------------<br>
  -- Apologies! The portion of the site you are visiting is under construction!  I appreciate your patience! Thank you!
