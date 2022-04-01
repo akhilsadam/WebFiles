@@ -69,7 +69,8 @@ def synth(sy,sections):
         with open(file,'w') as f:
             f.write(tx)
 
-synth('art',['art','models'])
+synth('art',['art'])
+synth('model',['models'])
 synth('archvis',['archvis'])
 
 os.system('git add .')

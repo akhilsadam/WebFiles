@@ -19,15 +19,15 @@ header:
 <link type="text/css" rel="stylesheet" href="/../../photoswipe/photoswipe.css">
 <link type="text/css" rel="stylesheet" href="/../../photoswipe/photoswipe_me.css">
 
-<h1>Art Gallery</h1>
+<h1>3D Modeling</h1>
 <div class="art">
 <div class="pswp-gallery" id="gallery--art">
 <masonry-layout cols="7" gap="5px">
-[replace-art]
+[replace-models]
 </masonry-layout>
 </div>
 <hr/>
-<div class="text hblur" style="position:relative; left: 2.5%;width: 95%;">A limited set of selected works! Done with <a href="https://www.blender.org/">Blender</a> (EEVEE and Cycles), occasionally using <a href="https://luxcorerender.org/">LuxCoreRender</a>. Mild post-production in <a href="http://x.photoscape.org/">PhotoscapeX</a>. 2D work done in <a href="https://krita.org/en/">Krita</a> and <a href="https://www.gimp.org/">Gimp</a>. </div>
+<div class="text hblur" style="position:relative; left: 2.5%;width: 95%;">A limited set of selected works, mostly done as concept for game, which is why they are so high-poly! Done with Blender.</div>
 <hr/>
 </div>
 
