@@ -19,12 +19,13 @@ header:
 <link type="text/css" rel="stylesheet" href="/../../photoswipe/photoswipe.css">
 <link type="text/css" rel="stylesheet" href="/../../photoswipe/photoswipe_me.css">
 <div class="text hc hblur">
+<div style="z-index: 40;">
 <br>-----------------------------------------------------------------------------------------------------------<br>
  -- Apologies! The portion of the site you are visiting is under construction!  I appreciate your patience! Thank you!
 <br>-----------------------------------------------------------------------------------------------------------<br><br>
 </div>
+</div>
 <h1>Art Gallery</h1>
-<hr/>
 <div class="art">
 <div class="pswp-gallery" id="gallery--art">
 <masonry-layout cols="7" gap="5px">
@@ -33,9 +34,7 @@ header:
 </div>
 <div class="text hblur" style="position:relative; left: 2.5%;width: 95%;">Only a very limited set of selected works! Done with <a href="https://www.blender.org/">Blender</a> (EEVEE and Cycles), occasionally using <a href="https://luxcorerender.org/">LuxCoreRender</a>. Mild post-production in <a href="http://x.photoscape.org/">PhotoscapeX</a>. 2D work done in <a href="https://krita.org/en/">Krita</a> and <a href="https://www.gimp.org/">Gimp</a>. </div>
 </div>
-<hr/>
 <h1>3D Modeling</h1>
-<hr/>
 <div class="art">
 <div class="pswp-gallery" id="gallery--art">
 <masonry-layout cols="7" gap="5px">
