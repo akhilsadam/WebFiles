@@ -14,7 +14,7 @@ header:
   image: ""
 ---
 <script defer src="../../js/scrollMain.js"></script>
-<script defer src="../../js/art.js"></script>
+<script type="module" defer src="../../js/art.js"></script>
 <link href="../../css/mixblend_disable.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
 <div class="text hc hblur">
