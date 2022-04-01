@@ -18,13 +18,7 @@ header:
 <link href="../../css/mixblend_disable.css" rel="stylesheet" type="text/css">
 <link type="text/css" rel="stylesheet" href="/../../photoswipe/photoswipe.css">
 <link type="text/css" rel="stylesheet" href="/../../photoswipe/photoswipe_me.css">
-<div class="text hc hblur">
-<div style="z-index: 40;">
-<br>-----------------------------------------------------------------------------------------------------------<br>
- -- Apologies! The portion of the site you are visiting is under construction!  I appreciate your patience! Thank you!
-<br>-----------------------------------------------------------------------------------------------------------<br><br>
-</div>
-</div>
+
 <h1>Art Gallery</h1>
 <div class="art">
 <div class="pswp-gallery" id="gallery--art">
