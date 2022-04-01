@@ -26,8 +26,8 @@ header:
 [replace-models]
 </masonry-layout>
 </div>
-<hr/>
-<div class="text hblur" style="position:relative; left: 2.5%;width: 95%;">A limited set of selected works, mostly done as concept for game, which is why they are so high-poly! Done with Blender.</div>
+<br/>
+<div class="text" style="position:relative; left: 2.5%;width: 95%;">A limited set of selected works, mostly done as concept for game, which is why they are so high-poly! Done with Blender.</div>
 <hr/>
 </div>
 

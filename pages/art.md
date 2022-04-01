@@ -19,6 +19,7 @@ header:
 <link type="text/css" rel="stylesheet" href="/../../photoswipe/photoswipe.css">
 <link type="text/css" rel="stylesheet" href="/../../photoswipe/photoswipe_me.css">
 
+<div class="text hc hblur">
 <h1>Art Gallery</h1>
 <div class="art">
 <div class="pswp-gallery" id="gallery--art">
@@ -26,7 +27,8 @@ header:
 [replace-art]
 </masonry-layout>
 </div>
-<div class="text ht" style="position:relative; left: 2.5%;width: 95%;">A limited set of selected works! Done with <a href="https://www.blender.org/">Blender</a> (EEVEE and Cycles), occasionally using <a href="https://luxcorerender.org/">LuxCoreRender</a>. Mild post-production in <a href="http://x.photoscape.org/">PhotoscapeX</a>. 2D work done in <a href="https://krita.org/en/">Krita</a> and <a href="https://www.gimp.org/">Gimp</a>. </div>
+<div class="text" style="position:relative; left: 2.5%;width: 95%;">A limited set of selected works! Done with <a href="https://www.blender.org/">Blender</a> (EEVEE and Cycles), occasionally using <a href="https://luxcorerender.org/">LuxCoreRender</a>. Mild post-production in <a href="http://x.photoscape.org/">PhotoscapeX</a>. 2D work done in <a href="https://krita.org/en/">Krita</a> and <a href="https://www.gimp.org/">Gimp</a>. </div>
+<br/>
 </div>
 <hr/>
 
