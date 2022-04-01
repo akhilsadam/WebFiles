@@ -58,7 +58,7 @@ def synth(sy,sections):
 
         return reptext
 
-    tx = pathlib.Path('art.md').read_text()
+    tx = pathlib.Path(f'{item}.md').read_text()
 
     for item in sections:
 
