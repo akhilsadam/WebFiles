@@ -21,7 +21,7 @@ def synth(sy,sections):
             data-pswp-width="{w}" 
             data-pswp-height="{h}"
             target="_blank">
-            <img src="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true" alt="" />
+            <img src="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true" alt="" width="{w}" height="{h}"/>
         </a>"""
         # 
         url = lambda nm: f"https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true"
