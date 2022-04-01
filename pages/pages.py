@@ -52,10 +52,10 @@ def synth(sy,sections):
                 else:
                     w,h = im.size
                     reptext.append(repitem(p,w,h))
-            elif ext in other:
-                w = 1920
-                h = 1080
-                reptext.append(repitem(p, w, h))
+            # elif ext in other:
+            #     w = 1920
+            #     h = 1080
+            #     reptext.append(repitem(p, w, h))
 
         return reptext
 
