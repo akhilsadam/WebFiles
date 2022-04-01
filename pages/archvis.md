@@ -26,7 +26,7 @@ header:
 <hr/>
 <div class="portfolio">
 <div class="pswp-gallery  pswp-gallery--single-column" id="gallery--art">
-<masonry-layout cols="5" gap="10">
+<masonry-layout cols="5" gap="0">
 [replace-archvis]
 </masonry-layout>
 </div>
