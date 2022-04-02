@@ -21,8 +21,16 @@ def synth(sy,sections):
             data-pswp-width="{w}" 
             data-pswp-height="{h}"
             target="_blank">
-            <img src="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true" alt="" width="{int(w/f)}" height="{int(w/h)}"/>
+            <img src="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true" alt="" width="{int(w/f)}" height="{int(h/f)}"/>
         </a>"""
+
+        repvid = lambda nm,w,h: f"""  <iframe href="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true" 
+            data-pswp-src="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true"
+            data-pswp-width="{w}" 
+            data-pswp-height="{h}"
+            target="_blank"
+            src="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true" alt="" width="{w}" height="{h}"/>
+        </iframe>"""
         # 
         url = lambda nm: f"https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true"
 
@@ -52,10 +60,10 @@ def synth(sy,sections):
                 else:
                     w,h = im.size
                     reptext.append(repitem(p,w,h))
-            # elif ext in other:
-            #     w = 1920
-            #     h = 1080
-            #     reptext.append(repitem(p, w, h))
+            elif ext in other:
+                w = 1920
+                h = 1080
+                reptext.append(repvid(p, w, h))
 
         return reptext
 
