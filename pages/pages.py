@@ -24,13 +24,14 @@ def synth(sy,sections):
             <img src="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true" alt="" width="{int(w/f)}" height="{int(h/f)}"/>
         </a>"""
 
-        repvid = lambda nm,w,h: f"""  <iframe href="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true" 
+        repvid = lambda nm,w,h: f"""  <video src="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true" 
+            controls="controls" muted="muted"
             data-pswp-src="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true"
             data-pswp-width="{w}" 
             data-pswp-height="{h}"
             target="_blank"
-            src="https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true" alt="" width="{w}" height="{h}"/>
-        </iframe>"""
+            width="{w}" height="{h}"/>
+        </video>"""
         # 
         url = lambda nm: f"https://raw.githubusercontent.com/akhilsadam/WebFiles/master/{item}/{nm}?raw=true"
 
