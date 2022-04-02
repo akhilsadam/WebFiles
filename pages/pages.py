@@ -79,7 +79,7 @@ def synth(sy,sections):
 
 synth('art',['art'])
 synth('model',['models'])
-synth('archvis',['archvis'])
+synth('archvis',['archvis','arch2'])
 
 os.system('git add .')
 os.system('git commit -m "[auto] update pages"')

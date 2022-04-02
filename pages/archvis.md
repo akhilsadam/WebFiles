@@ -28,6 +28,7 @@ header:
 <div class="portfolio">
 <div class="pswp-gallery  pswp-gallery--single-column" id="gallery--art">
 <masonry-layout cols="7" gap="5px">
+[replace-arch2]
 [replace-archvis]
 </masonry-layout>
 </div>
