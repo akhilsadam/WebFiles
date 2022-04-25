@@ -1,0 +1,23 @@
+category, skill
+Analytical, "Mathematical modelling"
+Analytical, "statistical modelling"
+Analytical, "Bayesian statistics"
+Analytical, "reproducible research"
+Analytical, "Software development"
+Programming, "R (advanced)"
+Programming, "Stan (advanced)"
+Programming, "Python"
+Programming, "Julia"
+Programming, "Turing.jl"
+Programming, "C/C++"
+Programming, Bash
+Programming, SQL
+Programming, Git
+Programming, Docker
+Programming, AWS
+Programming, GCS
+Programming, Azure
+
+
+
+

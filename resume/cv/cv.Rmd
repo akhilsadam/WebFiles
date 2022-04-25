@@ -1,0 +1,150 @@
+---
+name: Akhil Sadam
+position: "Aerospace Department, University of Texas at Austin"
+address: "2826 Cool River Loop, Round Rock, TX 78665"
+photo: ./fonts/avatar2.png
+www: akhilsadam.github.io
+github: akhilsadam
+scholar: 6G9FVRgAAAAJ
+sc: lightwaveofficial
+linkedin: akhil-sadam
+email: akhil.sadam@utexas.edu
+phone: 512-298-0307
+aboutme: "simulation architect / automation engineer, independent game developer and composer."
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: "000000"
+output:
+  vitae::awesomecv:
+    latex_engine: xelatex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+library(vitae)
+library(here)
+library(vroom)
+library(dplyr)
+library(lubridate)
+library(glue)
+```
+```{r setup2, include=FALSE}
+here::here()
+getwd()
+here::i_am(path="_.R")
+here::here()
+```
+
+
+# Positions
+
+```{r}
+jobs <- vroom(here::here("data", "jobs.csv"))
+
+jobs |>
+  arrange(desc(dates)) |> 
+  detailed_entries(
+    what = glue("{role} - {company}"),
+    when = dates
+)
+```
+
+
+# Qualifications
+
+```{r}
+edu <- vroom(here("data", "education.csv"))
+
+detailed_entries(edu,
+                 when = glue("{start_date}--{end_date}"),
+                 what = glue("{degree} - {uni}"))
+
+```
+
+# Skills
+
+```{r}
+skills <- vroom(here::here("data", "skills.csv")) |>
+  group_by(category) |>
+  mutate(skill = paste(skill, collapse = ", ")) |>
+  ungroup() |>
+  unique()
+
+skills |>
+  detailed_entries(what = skill, with = category)
+```
+
+# Selected publications
+
+```{r}
+pubs <- vroom(here::here("data", "publications.csv"), delim = "\t")
+
+pubs |>
+  detailed_entries(
+    what = publication
+)
+```
+
+*See [here](https://scholar.google.com/citations?user=GqZm90IAAAAJ&hl=en) for a full list of my publications.*
+
+# Selected software
+
+```{r}
+software <- vroom(here::here("data", "software.csv")) |>
+  arrange(desc(when))
+
+software |>
+  detailed_entries(
+    what = glue("{package} - {what}"), when = where
+)
+```
+
+*Software that I have primarily developed has had over 30k downloads and been used/is used in multiple public health organisations such as the WHO and the ECDC. Software that I have managed the development of has had over 20k downloads. See [my GitHub](https://github.com/seabbs/) for more on my software output.*
+
+# Research (Co-) Supervision
+
+```{r research}
+supervision <- vroom(here::here("data", "supervision.csv"))
+
+supervision |>
+  detailed_entries(
+    what = glue("{who} - {what}"),
+    when = when
+)
+```
+# Teaching
+
+```{r}
+teaching <- vroom(here::here("data", "teaching.csv")) |>
+  arrange(desc(when))
+
+teaching |>
+  detailed_entries(
+    what = what, when = when
+)
+```
+
+
+# Selected presentations
+
+```{r}
+presentations <- vroom(here::here("data", "presentations.csv")) |>
+  arrange(desc(when))
+
+presentations |>
+  detailed_entries(
+    what = with, when = when
+)
+```
+
+*See the details, slides, and recordings of all my presentations [here](https://samabbott.co.uk/talks.html)*
+
+# Service
+
+```{r}
+service <- vroom(here::here("data", "service.csv"))
+
+service |>
+  detailed_entries(what = glue("{type} - {details}"), when = when)
+```

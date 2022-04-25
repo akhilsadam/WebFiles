@@ -1,0 +1,6 @@
+package,what,when, where
+EpiNow2, Estimate real-time case counts and time-varying epidemiological parameters, 2020, epiforecasts.io/EpiNow2
+covidregionaldata, Subnational data for the COVID-19 outbreak, 2021, epiforecasts.io/covidregionaldata
+epinowcast, Hierarchical nowcasting of right censored epidemological counts, 2022, epiforecasts.io/epinowcast
+scoringutils, Utilities for Scoring and Assessing Predictions, 2023, epiforecasts.io/scoringutils
+forecast.vocs, Forecast case and sequence notifications using variant of concern strain dynamics, epiforecasts.io/forecast.vocs
