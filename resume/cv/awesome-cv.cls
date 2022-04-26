@@ -75,7 +75,8 @@
 % Needed to use icons from font-awesome
 % (https://github.com/posquit0/latex-fontawesome)
 \defaultfontfeatures{Extension = .otf}
-\RequirePackage{fontawesome}
+% \RequirePackage{fontawesome}
+\usepackage{fontawesome5}
 \RequirePackage[default,opentype]{sourcesanspro}
 % Needed for the photo ID
 \RequirePackage[skins]{tcolorbox}
@@ -461,7 +462,7 @@
       \ifthenelse{\isundefined{\@scholar}}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{https://scholar.google.com/citations?user=6G9FVRgAAAAJ}{\faAlignJustify\acvHeaderIconSep\ publications}%
+          \href{https://scholar.google.com/citations?user=6G9FVRgAAAAJ}{\faIcon{buffer}\acvHeaderIconSep\ publications}%
         }%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
@@ -471,7 +472,7 @@
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{https://github.com/\@github}{\faCodemerge\acvHeaderIconSep\@github}%
+          \href{https://github.com/\@github}{\faIcon{github}\acvHeaderIconSep\@github}%
         }%
       \ifthenelse{\isundefined{\@gitlab}}%
         {}%
@@ -489,7 +490,7 @@
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{https://www.linkedin.com/in/\@linkedin}{\faLinkedinin\acvHeaderIconSep\@linkedin}%
+          \href{https://www.linkedin.com/in/\@linkedin}{\faIcon{linkedin-in}\acvHeaderIconSep\@linkedin}%
         }%
       \ifthenelse{\isundefined{\@twitter}}%
         {}%
@@ -538,12 +539,12 @@
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \faEnvelope\acvHeaderIconSep\@email%
+          \faIcon{envelope}\acvHeaderIconSep\@email%
         }%
       \ifthenelse{\isundefined{\@mobile}}%
         {}%
         {%
-          \acvHeaderSocialSep\faMobile\acvHeaderIconSep\@mobile%
+          \acvHeaderSocialSep\@mobile%
           \setbool{isstart}{false}%
         }%
       \ifthenelse{\isundefined{\@address}}{}{\acvHeaderSocialSep\headersocialstyle{\@address}}%
@@ -663,9 +664,9 @@
   \vspace{\acvSectionContentTopSkip}
   \vspace{-2.0mm}
   \begin{center}
-    \setlength\tabcolsep{1ex}
+    \setlength\tabcolsep{4ex}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.9}}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}  C{1.5cm} L{\textwidth - 4.0cm} R{2.5cm}}
 }{%
     \end{tabular*}
   \end{center}

@@ -1,23 +1,77 @@
-category, skill
-Analytical, "Mathematical modelling"
-Analytical, "statistical modelling"
-Analytical, "Bayesian statistics"
-Analytical, "reproducible research"
-Analytical, "Software development"
-Programming, "R (advanced)"
-Programming, "Stan (advanced)"
-Programming, "Python"
-Programming, "Julia"
-Programming, "Turing.jl"
-Programming, "C/C++"
-Programming, Bash
-Programming, SQL
-Programming, Git
-Programming, Docker
-Programming, AWS
-Programming, GCS
-Programming, Azure
-
-
-
-
+category, skill,,,,,
+Languages,Java,,,,,
+Languages, C#,,,,,
+Languages, C++,,,,,
+Languages, Python,,,,,
+Languages, RUST,,,,,
+Languages, ROS,,,,,
+Languages, ROOT,,,,,
+Languages, Geant4,,,,,
+Languages, OpenFoam,,,,,
+Languages, Mathematica,,,,,
+Languages, MATLAB,,,,,
+Languages, R,,,,,
+Languages, Fathom,,,,,
+Languages, HTML,,,,,
+Languages, CSS,,,,,
+Languages, JS,,,,,
+Languages, HLSL,,,,,
+Languages, Bash,,,,,
+Deployment,TACC,,,,,
+Deployment, Container Orchestration,,,,,
+Deployment, Docker,,,,,
+Deployment, Kubernetes,,,,,
+Deployment, Redis,,,,, 
+Deployment, Flask & Dash,,,,,
+Linux,Ubuntu,,,,,
+Linux, Debian,,,,,
+Linux, MS Hypervisor,,,,,
+Linux, VirtualBox,,,,,
+Linux, VMWare Player,,,,,
+Linux, Windows Subsystem for Linux,,,,,
+IDE,Visual Studio & VSCode,,,,,
+IDE, Jupyter Notebook,,,,,
+IDE, Anaconda,,,,,
+IDE, Make,,,,,
+IDE, CMake,,,,,
+IDE, Git,,,,,
+IDE, GitHub,,,,,
+Game & 3D,Unity,,,,,
+Game & 3D, Substance Painter,,,,,
+Game & 3D, Designer,,,,,
+Game & 3D, Alchemist,,,,,
+Game & 3D, Quixel Bridge & Mixer,,,,,
+Game & 3D, Blender,,,,,
+Game & 3D, Cinema4D,,,,,
+Game & 3D, Houdini,,,,,
+Game & 3D, Meshroom,,,,,
+Game & 3D, Revit,,,,,
+2D Art & Video,Blackmagic Design DaVinci Resolve & Fusion,,,,,
+2D Art & Video, GIMP,,,,,
+2D Art & Video, Krita,,,,,
+2D Art & Video, PhotoscapeX,,,,,
+Music,MuseScore,,,,,
+Music, FL Studio,,,,,
+Music, Cakewalk,,,,,
+Music, Reaper,,,,,
+Music, Kontakt,,,,,
+Music, Reaktor,,,,,
+Reporting,MS Word,,,,,
+Reporting, Excel,,,,,
+Reporting, PowerPoint,,,,,
+Reporting, R Markdown,,,,,
+Languages (natural),Native Proficiency in English,,,,,
+Languages (natural), Limited Working Proficiency in French,,,,,
+Languages (natural), Native Proficiency in Telugu (spoken),,,,,
+Interests,Computational Physics,,,,,
+Interests, Computational Mathematics,,,,,
+Interests, Computational Biology,,,,,
+Interests, Natural Language Processing,,,,,
+Interests, Data Analytics,,,,,
+Interests, Physics Simulations,,,,,
+Interests, Game Development,,,,,
+Interests, 3D Modeling & Photogrammetry,,,,,
+Interests, Cinematic & Electronic Music Production,,,,,
+Interests, Film Scoring,,,,,
+Interests, Piano,,,,,
+Interests, Literature,,,,,

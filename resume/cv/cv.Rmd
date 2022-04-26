@@ -1,18 +1,17 @@
 ---
 name: Akhil Sadam
-position: "Aerospace Department, University of Texas at Austin"
+position: "Undergraduate in Computational Engineering, University of Texas at Austin"
 address: "2826 Cool River Loop, Round Rock, TX 78665"
-photo: ./fonts/avatar2.png
+profilepic: ./fonts/0.jpg
 www: akhilsadam.github.io
 github: akhilsadam
-scholar: 6G9FVRgAAAAJ
-sc: lightwaveofficial
 linkedin: akhil-sadam
 email: akhil.sadam@utexas.edu
 phone: 512-298-0307
-aboutme: "simulation architect / automation engineer, independent game developer and composer."
+aboutme: simulation architect / automation engineer, independent game developer and composer. \linebreak \ \ \ \linebreak \ \ \ [\faIcon{buffer} \ research](https://akhilsadam.github.io/projects/research/) \ - \ [\faUnity \ game](https://akhilsadam.github.io/projects/simulation/) \ - \ [\faCubes \  arch-vis](https://akhilsadam.github.io/projects/archvis/) \ - \ [\faImage \ art](https://akhilsadam.github.io/projects/art/) \ - \ [\faCube \ models](https://akhilsadam.github.io/projects/model/) \ - \ [\faIcon{volume-off} \  music](https://akhilsadam.github.io/projects/music/)
 date: "`r format(Sys.time(), '%B %Y')`"
-headcolor: "000000"
+headcolor: "274175"
+docname: curriculum vitae
 output:
   vitae::awesomecv:
     latex_engine: xelatex
@@ -28,7 +27,9 @@ library(vroom)
 library(dplyr)
 library(lubridate)
 library(glue)
+library(scholar)
 ```
+
 ```{r setup2, include=FALSE}
 here::here()
 getwd()
@@ -37,30 +38,28 @@ here::here()
 ```
 
 
-# Positions
+# Research
+```{r child = '../data/positions.md'}
+```
+
+# Recent Publications
 
 ```{r}
-jobs <- vroom(here::here("data", "jobs.csv"))
-
-jobs |>
-  arrange(desc(dates)) |> 
+a <- get_publications('6G9FVRgAAAAJ')
+year <- a['year']
+title <- a['title']
+journal <- a['journal']
+a2 = a[order(year,journal,title),]
+a2[1:5,] |>
   detailed_entries(
-    what = glue("{role} - {company}"),
-    when = dates
-)
+    what = title,
+    with = author,
+    where = journal,
+    when = year
+  )
 ```
 
-
-# Qualifications
-
-```{r}
-edu <- vroom(here("data", "education.csv"))
-
-detailed_entries(edu,
-                 when = glue("{start_date}--{end_date}"),
-                 what = glue("{degree} - {uni}"))
-
-```
+A complete listing is available [here](https://scholar.google.com/citations?user=6G9FVRgAAAAJ).  
 
 # Skills
 
@@ -75,76 +74,28 @@ skills |>
   detailed_entries(what = skill, with = category)
 ```
 
-# Selected publications
-
-```{r}
-pubs <- vroom(here::here("data", "publications.csv"), delim = "\t")
-
-pubs |>
-  detailed_entries(
-    what = publication
-)
+# Experience  
+```{r child = '../data/xp.md'}
 ```
 
-*See [here](https://scholar.google.com/citations?user=GqZm90IAAAAJ&hl=en) for a full list of my publications.*
-
-# Selected software
-
-```{r}
-software <- vroom(here::here("data", "software.csv")) |>
-  arrange(desc(when))
-
-software |>
-  detailed_entries(
-    what = glue("{package} - {what}"), when = where
-)
-```
-
-*Software that I have primarily developed has had over 30k downloads and been used/is used in multiple public health organisations such as the WHO and the ECDC. Software that I have managed the development of has had over 20k downloads. See [my GitHub](https://github.com/seabbs/) for more on my software output.*
-
-# Research (Co-) Supervision
-
-```{r research}
-supervision <- vroom(here::here("data", "supervision.csv"))
-
-supervision |>
-  detailed_entries(
-    what = glue("{who} - {what}"),
-    when = when
-)
-```
-# Teaching
-
-```{r}
-teaching <- vroom(here::here("data", "teaching.csv")) |>
-  arrange(desc(when))
-
-teaching |>
-  detailed_entries(
-    what = what, when = when
-)
+# Outreach  
+```{r child = '../data/reach.md'}
 ```
 
 
-# Selected presentations
 
-```{r}
-presentations <- vroom(here::here("data", "presentations.csv")) |>
-  arrange(desc(when))
 
-presentations |>
-  detailed_entries(
-    what = with, when = when
-)
+# Education
+
+```{r child = '../data/edu.md'}
 ```
 
-*See the details, slides, and recordings of all my presentations [here](https://samabbott.co.uk/talks.html)*
+# Honors
 
-# Service
-
-```{r}
-service <- vroom(here::here("data", "service.csv"))
-
-service |>
-  detailed_entries(what = glue("{type} - {details}"), when = when)
+```{r child = '../data/hon.md'}
 ```
+
+
+# Additional Information  
+
+Work Eligibility:	Eligible to work in the U.S. with no restrictions.

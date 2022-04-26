@@ -1,60 +1,91 @@
-  |                                                                              |                                                                      |   0%  |                                                                              |...                                                                   |   5%
+  |                                                                              |                                                                      |   0%  |                                                                              |....                                                                  |   5%
    inline R code fragments
 
-  |                                                                              |.......                                                               |  10%
+  |                                                                              |.......                                                               |  11%
 label: setup (with options) 
 List of 1
  $ include: logi FALSE
 
-  |                                                                              |..........                                                            |  14%
+  |                                                                              |...........                                                           |  16%
+  ordinary text without R code
+
+  |                                                                              |...............                                                       |  21%
 label: setup2 (with options) 
 List of 1
  $ include: logi FALSE
 
-  |                                                                              |.............                                                         |  19%
+  |                                                                              |..................                                                    |  26%
   ordinary text without R code
 
-  |                                                                              |.................                                                     |  24%
-label: unnamed-chunk-1
-  |                                                                              |....................                                                  |  29%
+  |                                                                              |......................                                                |  32%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ child: chr "../data/positions.md"
+
+  |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
   ordinary text without R code
 
-  |                                                                              |.......................                                               |  33%
+
+  |                                                                              |..........................                                            |  37%
+  ordinary text without R code
+
+  |                                                                              |.............................                                         |  42%
 label: unnamed-chunk-2
-  |                                                                              |...........................                                           |  38%
+  |                                                                              |.................................                                     |  47%
   ordinary text without R code
 
-  |                                                                              |..............................                                        |  43%
+  |                                                                              |.....................................                                 |  53%
 label: unnamed-chunk-3
-  |                                                                              |.................................                                     |  48%
+  |                                                                              |.........................................                             |  58%
   ordinary text without R code
 
-  |                                                                              |.....................................                                 |  52%
-label: unnamed-chunk-4
-  |                                                                              |........................................                              |  57%
+  |                                                                              |............................................                          |  63%
+label: unnamed-chunk-4 (with options) 
+List of 1
+ $ child: chr "../data/xp.md"
+
+  |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
   ordinary text without R code
 
-  |                                                                              |...........................................                           |  62%
-label: unnamed-chunk-5
-  |                                                                              |...............................................                       |  67%
+
+  |                                                                              |................................................                      |  68%
   ordinary text without R code
 
-  |                                                                              |..................................................                    |  71%
-label: research
-  |                                                                              |.....................................................                 |  76%
+  |                                                                              |....................................................                  |  74%
+label: unnamed-chunk-5 (with options) 
+List of 1
+ $ child: chr "../data/reach.md"
+
+  |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
   ordinary text without R code
 
-  |                                                                              |.........................................................             |  81%
-label: unnamed-chunk-6
-  |                                                                              |............................................................          |  86%
+
+  |                                                                              |.......................................................               |  79%
   ordinary text without R code
 
-  |                                                                              |...............................................................       |  90%
-label: unnamed-chunk-7
-  |                                                                              |...................................................................   |  95%
+  |                                                                              |...........................................................           |  84%
+label: unnamed-chunk-6 (with options) 
+List of 1
+ $ child: chr "../data/edu.md"
+
+  |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
   ordinary text without R code
+
+
+  |                                                                              |...............................................................       |  89%
+  ordinary text without R code
+
+  |                                                                              |..................................................................    |  95%
+label: unnamed-chunk-7 (with options) 
+List of 1
+ $ child: chr "../data/hon.md"
+
+  |                                                                              |                                                                      |   0%  |                                                                              |......................................................................| 100%
+  ordinary text without R code
+
 
   |                                                                              |......................................................................| 100%
-label: unnamed-chunk-8
+  ordinary text without R code
 
-"C:/PROGRA~1/Pandoc/pandoc" +RTS -K512m -RTS cv.knit.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output cv.tex --lua-filter "C:\Users\sadam\R\win-library\4.0\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\sadam\R\win-library\4.0\rmarkdown\rmarkdown\lua\latex-div.lua" --self-contained --template "C:\Users\sadam\R\win-library\4.0\vitae\rmarkdown\templates\awesomecv\resources\awesome-cv.tex" --highlight-style tango --pdf-engine xelatex --lua-filter "C:\Users\sadam\AppData\Local\Temp\RtmpsHyv26/multiple-bibliographies.lua" 
+
+"C:/PROGRA~1/Pandoc/pandoc" +RTS -K512m -RTS cv.knit.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output cv.tex --lua-filter "C:\Users\sadam\R\win-library\4.0\rmarkdown\rmarkdown\lua\pagebreak.lua" --lua-filter "C:\Users\sadam\R\win-library\4.0\rmarkdown\rmarkdown\lua\latex-div.lua" --self-contained --template "C:\Users\sadam\R\win-library\4.0\vitae\rmarkdown\templates\awesomecv\resources\awesome-cv.tex" --highlight-style tango --pdf-engine xelatex --lua-filter "C:\Users\sadam\AppData\Local\Temp\RtmpWgGGHB/multiple-bibliographies.lua" 
